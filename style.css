@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Serif 4", serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#page1{
+   min-height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#nav-part1{
+    width: 26%;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+#nav-part1 h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+#nav-part2{
+    width: 26%;
+    display: flex;
+    align-items:center ;
+    justify-content: flex-end;
+}
+#nav-part2 button{
+    padding: .7vw 1.5vw;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1vw;
+    margin: 0 .4vw;
+}
+#nav-part2 button:nth-child(1){
+    background-color: transparent;
+    color: #000;
+}
+#nav img{
+    height: 7vw;
+}
+
+
+#content{
+    height: calc(100% - 6vw);
+    width: 100%;
+    padding-top: 3vw;
+    
+}
+#content h3{
+    background-color: #F2B0EA;
+    padding: .6vw 1vw;
+    border-radius: 50px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    font-weight: 100;
+    transform: translateX(-50%);
+    font-size: 1.2vw;
+    
+}
+#content h1{
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    margin: 3vw 0;
+    font-weight: 100;
+    line-height: 4vw;
+}
+#content h4{
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content button{
+    padding: 1vw 2vw;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1vw;
+    margin: 50px 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1.5vw;
+}
+#bottom{
+    height: 20vw;
+    width: 100%;
+    padding: .3vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: inline-block;
+    
+}
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 15.5vw;
+    margin-right: 1.2vw;
+    background-color: rgb(140, 148, 171);
+    border-radius: 1.5vw;
+    overflow: hidden;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.elem .text-bottom{
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.057);
+    color:white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.text-fl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem .text-bottom h5{
+font-size: .9vw;
+margin-left: 1vw;
+align-items: center;
+
+}
+.elem .text-bottom .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+border: 1px solid black;
+border-radius: 50px;
+}
+
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+#page2 h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 5vw;
+    margin: 2vw 0;
+}
+.box{
+    height: 15vw;
+    width: 23vw;
+    background-color: red;
+    border-radius: 1vw;
+    display: inline-block;
+    position: relative;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    margin: .5vw;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-bottom{
+    height: 40%;
+    width: 100%;
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.63)) ;
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.5s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+.box-bottom i{
+    background-color: white;
+    padding: .2vw .4vw;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.box-bottom h5{
+    font-size: 1.2vw;
+}
+.box:hover .box-bottom{
+    bottom: 0;
+}
+
+.box:hover{
+    box-shadow: 0px 2px 20px rgba(123, 123, 123, 0.498);
+}
